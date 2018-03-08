@@ -1,0 +1,198 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #353535;
+  font-size: 16px; }
+
+img, video, canvas {
+  max-width: 100%; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px; } }
+
+ul {
+  list-style-type: none; }
+
+a {
+  color: #16a085; }
+  a:hover {
+    text-decoration: none;
+    color: #16a085; }
+  a:visited {
+    color: #16a085; }
+
+section {
+  margin: 80px 0; }
+
+.section-title {
+  background: url("../images/back-head-title.png") repeat-x;
+  display: block;
+  margin-bottom: 80px; }
+  .section-title h3 {
+    text-transform: uppercase;
+    font-size: 2.250em;
+    padding: 0 2.5%;
+    background: #fff;
+    display: inline-block;
+    margin-top: -3px;
+    margin-left: 6%;
+    line-height: 90%; }
+
+/*----------------------------*/
+/*---------- HEADER ----------*/
+/*----------------------------*/
+#header {
+  margin-top: 80px; }
+  #header .wrapper {
+    display: flex;
+    align-items: center; }
+
+.profile-img {
+  width: 340px;
+  border-radius: 50%;
+  border: 9px solid #eee; }
+  .profile-img img {
+    border-radius: 50%; }
+
+.profile-content {
+  padding-left: 60px; }
+  .profile-content h1 {
+    font-size: 4.250em;
+    text-transform: capitalize;
+    line-height: 1; }
+    .profile-content h1 span {
+      font-weight: 600; }
+  .profile-content h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 9px 0;
+    color: #1abc9c;
+    margin: 0; }
+  .profile-content p {
+    font-size: 1.875em;
+    font-weight: 300;
+    margin: 0; }
+
+/*----------------------------*/
+/*---------- ABOUT -----------*/
+/*----------------------------*/
+.about-content {
+  position: relative; }
+  .about-content .icon {
+    font-size: 40px;
+    color: #1abc9c;
+    position: absolute;
+    top: -20px; }
+  .about-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-indent: 60px; }
+
+/*------------------------------*/
+/*---------- CONTACT -----------*/
+/*------------------------------*/
+.contact-block {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px; }
+  .contact-block .icon {
+    font-size: 36px;
+    color: #1abc9c;
+    margin-top: 5px; }
+  .contact-block p {
+    padding-left: 15px;
+    font-size: 14px; }
+    .contact-block p span {
+      text-transform: uppercase;
+      font-weight: 600; }
+
+/*--------------------------------*/
+/*---------- PORTFOLIO -----------*/
+/*--------------------------------*/
+.portfolio-item {
+  position: relative;
+  z-index: 1; }
+  .portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(26, 188, 156, 0);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out; }
+    .portfolio-item .overlay a {
+      position: absolute;
+      top: -40px;
+      opacity: 0;
+      color: #fff;
+      font-size: 36px;
+      z-index: 3;
+      cursor: pointer;
+      transition: all .3s ease-in-out; }
+
+.portfolio-item:hover .overlay {
+  visibility: visible;
+  background: rgba(26, 188, 156, 0.7); }
+
+.portfolio-item:hover .overlay a {
+  top: 38%;
+  opacity: 1; }
+
+/*--------------------------------------*/
+/*---------- WORK EXPERIENCE -----------*/
+/*--------------------------------------*/
+.work-title {
+  margin-left: 9.5%;
+  border-left: 6px solid #1abc9c;
+  padding-left: 15px;
+  line-height: 90%; }
+  .work-title .date {
+    font-size: 1.5em;
+    margin: 0; }
+  .work-title h4 {
+    font-size: 2em;
+    color: #1abc9c;
+    margin-top: 10px;
+    margin-bottom: 0; }
+  .work-title h5 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #1abc9c;
+    margin-bottom: 0; }
+  .work-title .address {
+    font-size: 1.125em;
+    margin-top: 10px; }
+
+.work-text {
+  margin: 20px 0 60px 6%; }
+
+/*------------------------------*/
+/*---------- SKILLS ------------*/
+/*------------------------------*/
+.skill-title {
+  font-weight: 600;
+  font-size: 1.125em; }
+
+.skill-bar {
+  height: 20px;
+  width: 100%;
+  background: #eee;
+  margin-bottom: 20px; }
+  .skill-bar div {
+    background: #1abc9c;
+    height: 20px; }
+
+.skill-badges {
+  margin-top: 30px; }
+  .skill-badges .badge {
+    background: #e2e2e2;
+    border-radius: 30px;
+    padding: 10px 14px;
+    color: #1abc9c;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 5px; }
