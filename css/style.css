@@ -95,6 +95,9 @@ section {
   display: flex;
   justify-content: center;
   padding-left: 15px; }
+  @media (max-width: 960px) {
+    .contact-block {
+      justify-content: flex-start; } }
   .contact-block .icon {
     font-size: 36px;
     color: #1abc9c;
@@ -111,7 +114,9 @@ section {
 /*--------------------------------*/
 .portfolio-item {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 30px;
+  border: 5px solid #eee; }
   .portfolio-item .overlay {
     position: absolute;
     top: 0;
@@ -195,4 +200,13 @@ section {
     color: #1abc9c;
     font-weight: 700;
     display: inline-block;
-    margin-right: 5px; }
+    margin-right: 10px; }
+
+.lang {
+  margin-left: 40px;
+  margin-top: 50px;
+  font-weight: 600; }
+  .lang .icon {
+    color: #1abc9c;
+    padding-right: 10px;
+    font-size: 20px; }
