@@ -11,7 +11,8 @@ img, video, canvas {
     max-width: 960px; } }
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 a {
   color: #16a085; }
@@ -37,6 +38,9 @@ section {
     margin-top: -3px;
     margin-left: 6%;
     line-height: 90%; }
+    @media (max-width: 460px) {
+      .section-title h3 {
+        font-size: 1.825em; } }
 
 .pdf-download {
   position: fixed;
@@ -50,7 +54,11 @@ section {
   height: 50px;
   background: #eee;
   cursor: pointer;
-  box-shadow: 2px 2px 2px #ddd; }
+  box-shadow: 2px 2px 2px #ddd;
+  z-index: 5; }
+  @media (max-width: 756px) {
+    .pdf-download {
+      top: 90%; } }
 
 /*----------------------------*/
 /*---------- HEADER ----------*/
@@ -70,10 +78,16 @@ section {
 
 .profile-content {
   padding-left: 60px; }
+  @media (max-width: 756px) {
+    .profile-content {
+      padding-left: 0; } }
   .profile-content h1 {
     font-size: 4.250em;
     text-transform: capitalize;
     line-height: 1; }
+    @media (max-width: 565px) {
+      .profile-content h1 {
+        font-size: 3em; } }
     .profile-content h1 span {
       font-weight: 600; }
   .profile-content h2 {
@@ -82,10 +96,16 @@ section {
     padding: 9px 0;
     color: #1abc9c;
     margin: 0; }
+    @media (max-width: 565px) {
+      .profile-content h2 {
+        font-size: 1.75em; } }
   .profile-content p {
     font-size: 1.875em;
     font-weight: 300;
     margin: 0; }
+    @media (max-width: 565px) {
+      .profile-content p {
+        font-size: 1.45em; } }
 
 /*----------------------------*/
 /*---------- ABOUT -----------*/
@@ -98,8 +118,9 @@ section {
     position: absolute;
     top: -20px; }
   .about-content p {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.6;
+    font-weight: 300;
     text-indent: 60px; }
 
 /*------------------------------*/
@@ -169,6 +190,9 @@ section {
   border-left: 6px solid #1abc9c;
   padding-left: 15px;
   line-height: 90%; }
+  @media (max-width: 500px) {
+    .work-title {
+      line-height: 1; } }
   .work-title .date {
     font-size: 1.5em;
     margin: 0; }
@@ -192,6 +216,12 @@ section {
 /*------------------------------*/
 /*---------- SKILLS ------------*/
 /*------------------------------*/
+.skills {
+  padding-left: 40px; }
+  @media (max-width: 565px) {
+    .skills {
+      padding-left: 0; } }
+
 .skill-title {
   font-weight: 600;
   font-size: 1.125em; }
@@ -206,7 +236,11 @@ section {
     height: 20px; }
 
 .skill-badges {
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding-left: 40px; }
+  @media (max-width: 565px) {
+    .skill-badges {
+      padding-left: 0; } }
   .skill-badges .badge {
     background: #e2e2e2;
     border-radius: 30px;
@@ -217,9 +251,12 @@ section {
     margin-right: 10px; }
 
 .lang {
-  margin-left: 40px;
   margin-top: 50px;
-  font-weight: 600; }
+  font-weight: 600;
+  padding-left: 40px; }
+  @media (max-width: 565px) {
+    .lang {
+      padding: 0; } }
   .lang .icon {
     color: #1abc9c;
     padding-right: 10px;
